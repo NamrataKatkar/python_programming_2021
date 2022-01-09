@@ -5,9 +5,7 @@ def countSort(a,maxnumber):
         d[a[i]]=d[a[i]]+1
     res=[]
     for j in range(0,len(d)):
-        if j==0:
-            j+=1
-        else:
+        if d[j]!=0:
             for k in range(0,d[j]):
                 res.append(j)
     return res
